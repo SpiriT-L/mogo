@@ -4,6 +4,7 @@
 $body-text: #999999;
 $yellow: #fce38a;
 $white: #ffffff;
+$black-text:#333333;
 
 body {
   font-family: Roboto;
@@ -25,5 +26,5 @@ body {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  background: rgb(161, 158, 158);
+  // background: rgb(161, 158, 158);
 }

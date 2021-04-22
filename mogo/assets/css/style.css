@@ -367,7 +367,6 @@ body {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  background: #a19e9e;
 }
 
 /* Header start */
@@ -415,6 +414,7 @@ body {
       -ms-flex-pack: end;
           justify-content: flex-end;
   text-transform: uppercase;
+  padding: 0;
 }
 
 .nav__item {
@@ -424,6 +424,7 @@ body {
   font-style: normal;
   margin-left: 57px;
   text-transform: uppercase;
+  list-style: none;
 }
 
 .nav__item-link {
@@ -479,17 +480,151 @@ body {
 /* Header end */
 /* INTRO  start*/
 .intro {
-  width: 1920px;
+  width: 100%;
+  max-width: 1920;
   height: 1000px;
-  position: absolute;
+}
+
+.intro__fon {
+  max-width: 1920px;
+  height: 100%;
+  background-image: url(/assets/images/intro.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.intro__fon_layer {
+  width: 100%;
+  height: 100%;
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, 0.9)), to(rgba(243, 129, 129, 0.9)));
   background-image: -webkit-linear-gradient(bottom, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
   background-image: -o-linear-gradient(bottom, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
   background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
 }
 
-.intro__bg {
-  -webkit-transition: .3s;
-  -o-transition: .3s;
-  transition: .3s;
+.intro__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 802px;
+  margin: 0 auto;
+  padding-top: 148px;
+}
+
+.intro__subtitle {
+  font-family: 'Kaushan Script';
+  font-size: 72px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  color: #ffffff;
+  margin-bottom: 42px;
+}
+
+.intro__title {
+  font-family: Montserrat;
+  font-size: 150px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 140px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.intro__title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 71px auto 0;
+  margin-bottom: 50px;
+}
+
+.intro .btn {
+  display: inline-block;
+  border: 3px solid #ffffff;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  color: #ffffff;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-bottom: 157px;
+}
+
+.intro .btn:hover {
+  background-color: #f8f8f8;
+  color: #333333;
+}
+
+.intro__slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+  position: relative;
+}
+
+.intro__slider_active {
+  opacity: 1;
+}
+
+.intro__slider_active::before {
+  content: '';
+  display: block;
+  width: 70px;
+  height: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #f38181;
+}
+
+.intro__slider_item {
+  list-style: none;
+  color: #ffffff;
+  font-family: 'Montserrat - Regular';
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-top: 25px;
+  border-top: 3px solid #ffffff;
+  width: 100%;
+  max-width: 280px;
+}
+
+.intro .number {
+  font-family: 'Montserrat - Bold';
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
 }

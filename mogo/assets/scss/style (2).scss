@@ -222,8 +222,9 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 0;
+    position: relative;
 
-    &__active {
+    &_active {
       opacity: 1;
       &::before {
         content: '';
