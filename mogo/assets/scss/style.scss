@@ -312,7 +312,7 @@
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 50px;
-    &::after{
+    &::after {
       content: '';
       display: block;
       width: 60px;
@@ -320,7 +320,6 @@
       background-color: $pink;
       margin: 40px auto 0;
       // margin-bottom: 50px;
-
     }
   }
 
@@ -328,16 +327,97 @@
 
   &__content {
     width: 954px;
-height: 39px;
-color: $body-text;
-font-family: Roboto;
-font-size: 15px;
-font-weight: 400;
-font-style: normal;
-letter-spacing: normal;
-line-height: 24px;
-text-align: center;
+    height: 39px;
+    color: $body-text;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 24px;
+    text-align: center;
   }
 }
+
+/* BLOCK IMAGES START */
+.block {
+  // .block__about
+
+  &__about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 380px;
+    height: 250px;
+    margin-bottom: 110px;
+  }
+
+  // .block__images
+
+  &__images {
+    margin-right: 30px;
+    background-color: $img-fon;
+    position: relative;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  // .block__images-item
+
+  &__images-item {
+    // height: 100%;
+    background-image: linear-gradient(
+      to top,
+      rgba(252, 227, 138, 0.9) 0%,
+      rgba(243, 129, 129, 0.9) 100%
+    );
+    &:hover {
+      transform: translate3d(-10px, -10px, 0);
+      opacity: 1;
+    }
+
+    // opacity: .1;
+  }
+
+  &__imaages-text {
+    width: 100%;
+    height: 14px;
+    color: $white;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: center;
+    text-transform: uppercase;
+    opacity: 0;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+    transform: translate3d(0, -50%, 0);
+  }
+}
+.img__item:hover,
+.block__images-item:hover,
+.block__imaages-text:hover {
+  opacity: 1;
+}
+.img {
+  // .img__item
+
+  &__item {
+    display: block;
+    transition: opacity 0.1s linear;
+    &:hover {
+      opacity: 0.1;
+    }
+  }
+}
+
+/* BLOCK IMAGES END */
 
 /* SECTION ABOUT END */
