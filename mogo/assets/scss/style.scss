@@ -120,7 +120,7 @@
   &__fon {
     max-width: 1920px;
     height: 100%;
-    background-image: url(/assets/images/intro.jpg);
+    background-image: url(./assets/images/intro.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -405,8 +405,7 @@
 }
 // .img__item:hover,
 
-.block__images:hover
-.block__images-text {
+.block__images:hover .block__images-text {
   opacity: 1;
 }
 .img {
@@ -424,3 +423,64 @@
 /* BLOCK IMAGES END */
 
 /* SECTION ABOUT END */
+
+//=======================
+/* BLOCK STATISTICS START */
+.statistics {
+  width: 100%;
+  min-width: 1920px;
+  height: 270px;
+  background-color: $img-fon;
+  margin-bottom: 109px;
+}
+.block {
+  // .block__stat
+
+  &__stat {
+    display: flex;
+    justify-content: space-between;
+    // .block__stat_item
+
+    &_item {
+      border-left: 3px solid $white;
+      // width: 239px;
+      color: $white;
+      height: 270px;
+      flex: 1 1 0;
+      vertical-align: bottom;
+      text-align: center;
+      &:last-child {
+        border-right: 3px solid $white;
+      }
+    }
+  }
+  // &__stat_item {
+
+  //   }
+}
+.stat__number {
+  // color: $white;
+  font-family: Montserrat;
+  font-size: 72px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 89px;
+  // margin-bottom: 30px;
+}
+.stat__text {
+  // color: $white;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* BLOCK STATISTICS END */
