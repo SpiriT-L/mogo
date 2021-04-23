@@ -17,8 +17,7 @@
     align-items: center;
   }
 }
-.container {
-}
+
 .logo {
   // Style for "MoGo"
   width: 86px;
@@ -380,9 +379,9 @@
     // opacity: .1;
   }
 
-  &__imaages-text {
+  &__images-text {
     width: 100%;
-    height: 14px;
+    height: 18px;
     color: $white;
     font-family: Montserrat;
     font-size: 18px;
@@ -397,13 +396,17 @@
     position: absolute;
     top: 50%;
     left: 0;
-    z-index: 2;
+    z-index: 3;
     transform: translate3d(0, -50%, 0);
+    &:hover {
+      opacity: 1;
+    }
   }
 }
-.img__item:hover,
-.block__images-item:hover,
-.block__imaages-text:hover {
+// .img__item:hover,
+
+.block__images:hover
+.block__images-text {
   opacity: 1;
 }
 .img {

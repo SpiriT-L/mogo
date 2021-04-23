@@ -734,9 +734,9 @@ body {
   opacity: 1;
 }
 
-.block__imaages-text {
+.block__images-text {
   width: 100%;
-  height: 14px;
+  height: 18px;
   color: #ffffff;
   font-family: Montserrat;
   font-size: 18px;
@@ -750,14 +750,17 @@ body {
   position: absolute;
   top: 50%;
   left: 0;
-  z-index: 2;
+  z-index: 3;
   -webkit-transform: translate3d(0, -50%, 0);
           transform: translate3d(0, -50%, 0);
 }
 
-.img__item:hover,
-.block__images-item:hover,
-.block__imaages-text:hover {
+.block__images-text:hover {
+  opacity: 1;
+}
+
+.block__images:hover
+.block__images-text {
   opacity: 1;
 }
 
