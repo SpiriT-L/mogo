@@ -648,6 +648,11 @@ body {
   margin-bottom: 101px;
 }
 
+.section__header_devices {
+  padding-top: 109px;
+  margin-bottom: 86px;
+}
+
 .section__subtitle {
   color: #333333;
   font-family: 'Kaushan Script';
@@ -898,3 +903,31 @@ body {
 }
 
 /* BLOCK SERVICES END */
+/* SECTION DEVICES START */
+.section_device-bg {
+  background: url(../images/device/devices-bg.jpg) no-repeat center;
+  background-size: cover;
+  margin-bottom: 112px;
+  height: 965px;
+}
+
+.block__devices {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  bottom: 0;
+}
+
+.devices_item {
+  display: block;
+  margin-bottom: 0;
+}
+
+.devices_item-iphone {
+  position: absolute;
+  bottom: 25px;
+  right: 0;
+}
+
+/* SECTION DEVICES END */
