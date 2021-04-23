@@ -1,0 +1,29 @@
+@import '_fons';
+@import '_normalize';
+
+$body-text: #999999;
+$yellow: #fce38a;
+$white: #ffffff;
+
+body {
+  font-family: Roboto;
+  font-size: 15px;
+  color: $body-text;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: rgb(161, 158, 158);
+}
