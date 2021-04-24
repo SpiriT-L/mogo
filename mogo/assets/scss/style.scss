@@ -282,7 +282,7 @@
     max-width: 954px;
     margin: 0 auto;
     margin-bottom: 101px;
-    &_devices{
+    &_devices {
       padding-top: 109px;
       margin-bottom: 86px;
     }
@@ -565,7 +565,6 @@
   height: 965px;
 }
 .block {
-
   // .block__devices
 
   &__devices {
@@ -574,11 +573,9 @@
     margin: 0 auto;
     position: relative;
     bottom: 0;
-
   }
 }
 .devices {
-
   // .devices_item
 
   &_item {
@@ -596,3 +593,183 @@
 }
 
 /* SECTION DEVICES END */
+
+//=========================
+
+/* SECTION WE DO START */
+.block {
+  // .block__wedo
+
+  &__wedo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    flex: 1 1 0;
+    margin-bottom: 120px;
+  }
+
+  // .block__img
+
+  &__img {
+    margin-right: 16px;
+  }
+
+  // .block__do
+
+  &__do {
+  }
+
+  // .block__item
+
+  &__item {
+    border: 1px solid #e5e5e5;
+    width: 600px;
+    position: relative;
+
+    // .block__item_header
+
+    &_header {
+      display: flex;
+      align-items: center;
+      width: 600px;
+      height: 60px;
+      border-bottom: 1px solid #e5e5e5;
+      // position: relative;
+      cursor: pointer;
+      &-icon {
+        display: block;
+        // position: absolute;
+        width: 30px;
+        height: 30px;
+        margin-left: 15px;
+        margin-right: 15px;
+        // padding-right: 15px;
+      }
+      &::after {
+        content: '';
+        display: block;
+        width: 16px;
+        height: 16px;
+        border-top: 2px solid #ccc;
+        border-right: 2px solid #ccc;
+        position: absolute;
+        right: 20px;
+        transform: rotate(135deg);
+      }
+    }
+    .do__title {
+      color: $black-text;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      text-align: left;
+      text-transform: uppercase;
+    }
+
+    // .block__item_content
+
+    &_content {
+      display: none;
+      border-top: none;
+      p {
+        color: $black-text;
+        font-family: 'Roboto - Light Italic';
+        font-size: 15px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 24px;
+        text-align: left;
+        margin: 21px 55px 28px 20px;
+      }
+    }
+    &-active .block__item_content {
+      display: block;
+    }
+    &-active .block__item_header::after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+/* SECTION WE DO END */
+
+//=======================
+
+/* BLOCK COMMENT START */
+.comment {
+  background-color: #f8f8f8;
+}
+.block {
+  // .block__comment
+
+  &__comment {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin-bottom: 98px;
+    &_autor {
+      color: #333333;
+      font-family: 'Kaushan Script';
+      font-size: 24px;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      text-align: left;
+      position: relative;
+      left: 96px;
+
+      &::before {
+        content: '';
+        display: block;
+        width: 65px;
+        height: 5px;
+        background-color: #f38181;
+        position: absolute;
+        padding-right: 9px;
+        top: 17px;
+        left: -92px;
+      }
+    }
+  }
+
+  // .block__comment-item
+
+  &__comment-item {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #95e1d3;
+    margin: 70px 61px 70px 110px;
+
+    img {
+      text-align: center;
+      padding: 45px 43px 44px 44px;
+    }
+  }
+
+  // .block__comment-text
+
+  &__comment-text {
+    margin-top: 80px;
+    margin-right: 112px;
+    margin-bottom: 23px;
+    p {
+      color: $black-text;
+      font-family: 'Roboto Italic';
+      font-size: 24px;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: 36px;
+      text-align: left;
+      margin: 0;
+    }
+  }
+}
+
+/* BLOCK COMMENT END */
