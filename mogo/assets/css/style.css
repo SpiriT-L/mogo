@@ -1180,6 +1180,12 @@ body {
   padding: 45px 43px 44px 44px;
 }
 
+.block__comment-photo img {
+  text-align: center;
+  border-radius: 100%;
+  padding: 45px 43px 44px 70px;
+}
+
 .block__comment-text {
   margin-top: 80px;
   margin-right: 112px;
@@ -1221,3 +1227,89 @@ body {
 }
 
 /* BLOCK LOGOS END */
+/*  SECTION WORKS START */
+.works {
+  width: 100%;
+  max-width: 1920px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 100px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.works__col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
+}
+
+.works__item {
+  position: relative;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, 0.9)), to(rgba(243, 129, 129, 0.9)));
+  background-image: -webkit-linear-gradient(bottom, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+  background-image: -o-linear-gradient(bottom, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+  background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+}
+
+.works__item:hover .works__img {
+  opacity: 0.1;
+}
+
+.works__item:hover .works__info {
+  opacity: 1;
+}
+
+.works__img {
+  display: block;
+  -webkit-transition: opacity 0.2s linear;
+  -o-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+}
+
+.works__info {
+  width: 100%;
+  padding: 15px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  text-align: center;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transform: translate3d(0, -50%, 0);
+          transform: translate3d(0, -50%, 0);
+  -webkit-transition: opacity 0.2s linear;
+  -o-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+}
+
+.works__icon {
+  margin-bottom: 20px;
+}
+
+.works__title {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 17px;
+}
+
+.works__text {
+  color: #ffffff;
+  font-family: 'Roboto - Light Italic';
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+  text-align: center;
+}
+
+/* SECTION WORKS END */
