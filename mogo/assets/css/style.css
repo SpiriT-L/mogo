@@ -700,7 +700,7 @@ body {
 }
 
 /* BLOCK IMAGES START */
-.block__about {
+.block__cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -712,17 +712,20 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 380px;
-  height: 250px;
   margin-bottom: 110px;
 }
 
 .block__images {
   margin-right: 30px;
-  background-color: #95e1d3;
-  position: relative;
 }
 
-.block__images:last-child {
+.block__inner {
+  background-color: #95e1d3;
+  position: relative;
+  margin-bottom: 31px;
+}
+
+.block__inner:last-child {
   margin-right: 0;
 }
 
@@ -762,6 +765,66 @@ body {
 
 .block__images-text:hover {
   opacity: 1;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social__item {
+  width: 56px;
+  height: 56px;
+  background-color: #fce38a;
+  border-right: 1px solid #f38181;
+  text-decoration: none;
+  color: #f38181;
+  font-size: 26px;
+  padding-top: 15px;
+}
+
+.social__item:last-child {
+  border-right: none;
+}
+
+.social__item:hover {
+  background-color: #f38181;
+  color: #ffffff;
+}
+
+.comand {
+  text-align: center;
+}
+
+.comand__name {
+  color: #333333;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.comand__speciality {
+  color: #999999;
+  font-family: "Roboto - Light Italic";
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+  text-align: center;
 }
 
 .block__images:hover .block__images-text {
@@ -1040,6 +1103,31 @@ body {
 /* BLOCK COMMENT START */
 .comment {
   background-color: #f8f8f8;
+  position: relative;
+}
+
+.comment__btn {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-top: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+  position: absolute;
+  top: 50%;
+}
+
+.comment__btn_pref {
+  right: 20px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.comment__btn_left {
+  left: 20px;
+  -webkit-transform: rotate(-135deg);
+      -ms-transform: rotate(-135deg);
+          transform: rotate(-135deg);
 }
 
 .block__comment {
@@ -1052,6 +1140,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 98px;
+  position: relative;
 }
 
 .block__comment_autor {
