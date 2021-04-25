@@ -991,6 +991,7 @@
 .section__clients {
   background: rgba(255, 255, 255, 0.85) url(../images/cliens/2-layers.png)
     no-repeat center;
+  background-size: cover;
   width: 100%;
   max-width: 1920px;
   height: 830px;
@@ -1212,3 +1213,63 @@
 }
 
 /* SECTION BLOG END */
+
+//=====================
+
+/* SECTION MAP START */
+.section {
+  // .section__map
+
+  &__map {
+    background-image: url(../images/map-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 74px;
+  }
+}
+
+.map {
+  padding: 57px 0;
+  text-align: center;
+
+  &__icon {
+    color: #f38181;
+    font-style: 24px;
+  }
+  // .map__title
+
+  &__title {
+    color: #f38181;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: center;
+    text-transform: uppercase;
+    &::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 3px;
+      background-color: #f38181;
+      margin: 21px auto;
+    }
+
+    a {
+      padding-top: 18px;
+      text-decoration: none;
+      color: inherit;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.fas {
+  margin-bottom: 18px;
+}
+
+/* SECTION MAP END */
