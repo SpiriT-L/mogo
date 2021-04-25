@@ -1319,6 +1319,7 @@ body {
   width: 100%;
   max-width: 1920px;
   height: 830px;
+  margin-bottom: 112px;
 }
 
 .section__header_clients {
@@ -1366,7 +1367,7 @@ body {
 
 .clients__items_prof {
   color: #333333;
-  font-family: "Roboto - Light Italic";
+  font-family: 'Roboto - Light Italic';
   font-size: 15px;
   font-weight: 400;
   font-style: normal;
@@ -1398,3 +1399,108 @@ body {
 }
 
 /* SECTION CLIENS END */
+/* SECTION BLOG START */
+.blogs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 116px;
+}
+
+.blogs__item {
+  width: calc(100% / 3);
+  margin-right: 30px;
+}
+
+.blogs__item:last-child {
+  margin-right: 0;
+}
+
+.blogs__header {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.blogs__header_photo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.blogs__header_date {
+  position: absolute;
+  bottom: 10px;
+  left: -10px;
+  padding: 15px;
+  color: #ffffff;
+  background-color: #95e1d3;
+}
+
+.blogs__header_date-day {
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: normal;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.blogs__header_date-month {
+  font-family: 'Roboto - Light Italic';
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: center;
+}
+
+.blogs__content_title {
+  color: #333333;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.blogs__content_title a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.blogs__content_text {
+  color: #999999;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.blogs__footer {
+  border-top: 1px solid #e5e5e5;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.blogs__footer_stat i {
+  color: #95e1d3;
+}
+
+.blogs__footer_stat-views {
+  margin-right: 20px;
+}
+
+/* SECTION BLOG END */
