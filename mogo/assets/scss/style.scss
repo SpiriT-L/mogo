@@ -614,6 +614,7 @@
   // opacity: .5;
   margin-bottom: 112px;
   height: 965px;
+ 
 }
 .block {
   // .block__devices
@@ -893,17 +894,15 @@
 //===========
 /*  SECTION WORKS START */
 .works {
-  width: 100%;
-  max-width: 1920px;
+  max-width: 100%;
+  // max-width: 1920px;
+  height: auto;
   display: flex;
   margin-bottom: 100px;
   margin: 0 auto;
   margin-bottom: 100px;
 
   // .works_icon
-
-  &_icon {
-  }
 
   // .works__col
 
@@ -986,3 +985,101 @@
 }
 
 /* SECTION WORKS END */
+
+//====================
+
+/*  SECTION CLIENS START */
+.section__clients{
+  background:rgba(255, 255, 255, 0.85) url(../images/cliens/2-layers.png) no-repeat center;
+  width: 100%;
+  max-width: 1920px;
+height: 830px;
+
+// background-color: rgba(255, 255, 255, 0.85);
+
+}
+
+.section__header_clients{
+  padding-top: 109px;
+}
+
+.clients {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+
+  // .clients__items
+
+  &__items {
+    width: 50%;
+    margin-bottom: 81px;
+
+    // .clients__items_name
+
+    &_img{
+
+      position: absolute;
+      width: 110px;
+      height: 110px;
+      margin: 0 32px 0 32px;
+     
+      border-radius: 50%;
+    }
+
+&_info{
+  margin-left: 180px;
+
+}
+
+    &_name {
+      color: #333333;
+font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+text-align: left;
+text-transform: uppercase;
+margin-bottom: 15px;
+    }
+  
+
+    &_prof {
+      color: #333333;
+font-family: "Roboto - Light Italic";
+font-size: 15px;
+font-weight: 400;
+font-style: normal;
+letter-spacing: normal;
+line-height: 24px;
+text-align: left;
+margin-bottom: 17px;
+    }
+
+    // .clients__item_text
+
+    &_text {
+      color: #999999;
+font-family: Roboto;
+font-size: 15px;
+font-weight: 400;
+font-style: italic;
+letter-spacing: normal;
+line-height: 24px;
+text-align: left;
+padding-right: 41px;
+&::before{
+  content:'';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #f38181;
+  margin-bottom: 24px;
+}
+    }
+
+  }
+}
+
+/* SECTION CLIENS END */
