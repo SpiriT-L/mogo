@@ -120,7 +120,7 @@
   &__fon {
     max-width: 1920px;
     height: 100%;
-    background-image: url(./assets/images/intro.jpg);
+    background-image: url(/assets/images/intro.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1569,9 +1569,9 @@
     spam {
       color: #f49f9f;
     }
-    a{
+    a {
       text-decoration: none;
-      color:red;
+      color: red;
     }
   }
 }
