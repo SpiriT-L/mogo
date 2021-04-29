@@ -226,7 +226,7 @@
     }
     // Small  ≥576px
     @media (max-width: 557px) {
-      font-size: 60px;
+      font-size: 40px;
     }
   }
   .btn {
@@ -560,6 +560,9 @@
   height: 270px;
   background-color: $img-fon;
   margin-bottom: 109px;
+  @media (max-width: 557px) {
+    display: none;
+  }
 }
 .block {
   // .block__stat
@@ -581,10 +584,9 @@
         border-right: 3px solid $white;
       }
     }
-  }
-  // &__stat_item {
 
-  //   }
+  }
+  // Small  ≥576px
 }
 .stat__number {
   // color: $white;
@@ -994,6 +996,7 @@
     // Small  ≥576px
     @media (max-width: 557px) {
       margin-right: 0;
+      display: none;
     }
   }
 }

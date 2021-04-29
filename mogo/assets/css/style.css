@@ -350,9 +350,7 @@ body {
   font-family: Roboto;
   font-size: 15px;
   color: #999999;
-  width: 100%;
   max-width: 1920px;
-  margin: 0 auto;
 }
 
 *,
@@ -605,7 +603,7 @@ body {
 
 @media (max-width: 557px) {
   .intro__title {
-    font-size: 60px;
+    font-size: 40px;
   }
 }
 
@@ -941,6 +939,12 @@ body {
   height: 270px;
   background-color: #95e1d3;
   margin-bottom: 109px;
+}
+
+@media (max-width: 557px) {
+  .statistics {
+    display: none;
+  }
 }
 
 .block__stat {
@@ -1342,6 +1346,7 @@ body {
 @media (max-width: 557px) {
   .block__comment-text {
     margin-right: 0;
+    display: none;
   }
 }
 
